@@ -1,0 +1,174 @@
+{
+  "base": {
+    "n_total": 18000,
+    "n_desenvolvimento": 12000,
+    "n_fora_do_tempo": 6000,
+    "safras_desenvolvimento": [
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "safras_fora_do_tempo": [
+      2022,
+      2023
+    ],
+    "taxa_default_por_safra": {
+      "2018": 0.0457,
+      "2019": 0.0507,
+      "2020": 0.0413,
+      "2021": 0.0423,
+      "2022": 0.068,
+      "2023": 0.062
+    }
+  },
+  "concessao": {
+    "logistica": {
+      "teste_no_tempo": {
+        "auc": 0.6659,
+        "gini": 0.3318,
+        "ks": 0.2458,
+        "brier": 0.0417,
+        "taxa_default_observada": 0.045,
+        "pd_media_prevista": 0.0451
+      },
+      "fora_do_tempo": {
+        "auc": 0.6875,
+        "gini": 0.3751,
+        "ks": 0.2841,
+        "brier": 0.0587,
+        "taxa_default_observada": 0.065,
+        "pd_media_prevista": 0.0455
+      },
+      "psi_score_dev_vs_oot": 0.0026
+    },
+    "gradient_boosting": {
+      "teste_no_tempo": {
+        "auc": 0.6361,
+        "gini": 0.2722,
+        "ks": 0.242,
+        "brier": 0.0426,
+        "taxa_default_observada": 0.045,
+        "pd_media_prevista": 0.0442
+      },
+      "fora_do_tempo": {
+        "auc": 0.6613,
+        "gini": 0.3226,
+        "ks": 0.2533,
+        "brier": 0.0592,
+        "taxa_default_observada": 0.065,
+        "pd_media_prevista": 0.0446
+      },
+      "psi_score_dev_vs_oot": 0.0029
+    }
+  },
+  "psi_variaveis": {
+    "area_ha": 0.0029,
+    "alavancagem": 0.0019,
+    "atrasos_12m": 0.0001,
+    "anos_relacionamento": 0.0011,
+    "tem_seguro": 0.0,
+    "zarc_risco": 0.0,
+    "ndvi_hist_medio": 0.001,
+    "vol_chuva_hist": 0.0022
+  },
+  "comportamental_logistica_fora_do_tempo": {
+    "auc": 0.7205,
+    "gini": 0.441,
+    "ks": 0.3285,
+    "brier": 0.0568,
+    "taxa_default_observada": 0.065,
+    "pd_media_prevista": 0.0597
+  },
+  "perda_esperada_fora_do_tempo": {
+    "perda_esperada_modelo": 126138876.16,
+    "perda_realizada_simulada": 194423413.7,
+    "nota": "LGD por garantia é premissa ilustrativa; EAD = exposição sintética."
+  },
+  "calibracao_safra_uf_oot": [
+    {
+      "safra": 2022,
+      "uf": "BA",
+      "n": 300,
+      "default_observado": 0.0633,
+      "pd_media_prevista": 0.0542
+    },
+    {
+      "safra": 2022,
+      "uf": "GO",
+      "n": 427,
+      "default_observado": 0.0375,
+      "pd_media_prevista": 0.0406
+    },
+    {
+      "safra": 2022,
+      "uf": "MG",
+      "n": 432,
+      "default_observado": 0.037,
+      "pd_media_prevista": 0.0361
+    },
+    {
+      "safra": 2022,
+      "uf": "MT",
+      "n": 616,
+      "default_observado": 0.0325,
+      "pd_media_prevista": 0.0441
+    },
+    {
+      "safra": 2022,
+      "uf": "PR",
+      "n": 607,
+      "default_observado": 0.0708,
+      "pd_media_prevista": 0.0412
+    },
+    {
+      "safra": 2022,
+      "uf": "RS",
+      "n": 618,
+      "default_observado": 0.1456,
+      "pd_media_prevista": 0.0576
+    },
+    {
+      "safra": 2023,
+      "uf": "BA",
+      "n": 317,
+      "default_observado": 0.0757,
+      "pd_media_prevista": 0.0548
+    },
+    {
+      "safra": 2023,
+      "uf": "GO",
+      "n": 437,
+      "default_observado": 0.0458,
+      "pd_media_prevista": 0.0446
+    },
+    {
+      "safra": 2023,
+      "uf": "MG",
+      "n": 460,
+      "default_observado": 0.0435,
+      "pd_media_prevista": 0.0339
+    },
+    {
+      "safra": 2023,
+      "uf": "MT",
+      "n": 556,
+      "default_observado": 0.0558,
+      "pd_media_prevista": 0.0426
+    },
+    {
+      "safra": 2023,
+      "uf": "PR",
+      "n": 602,
+      "default_observado": 0.0498,
+      "pd_media_prevista": 0.0423
+    },
+    {
+      "safra": 2023,
+      "uf": "RS",
+      "n": 628,
+      "default_observado": 0.0971,
+      "pd_media_prevista": 0.0553
+    }
+  ]
+}
